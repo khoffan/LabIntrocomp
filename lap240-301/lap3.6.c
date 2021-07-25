@@ -1,21 +1,20 @@
 
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
-    float in,out,z;
-    int x,y,price,total;
-    scanf("%f %f",&in,&out);
+    int in,out,price,total,minit1,minit2,in1,out1;
+    scanf("%d %d %d %d",&in1,&minit1,&out1,&minit2);
     price = 50;
-    x = in*60;
-    y = out*60;
-    z = (y-x)/60;
-    printf("Enter-time = %.2f\n",in);
-    printf("Out-time = %.2f\n",out);
-    printf("check : %.2f\n",z);
-    if((y-x)<=2){
+    in = abs(in1-out1)-1;
+    out = abs((minit1-minit2)-60);
+    printf("Enter-time = %d : %d\n",in1,minit1);
+    printf("Out-time = %d : %d\n",out1,minit2);
+    printf("check : %d hour : %d minit\n",in,out);
+    if((abs(in1-out1)+1)<=2){
         printf("Charge : %d",price);
     }
     else{
-        total = price+((z-2)*10);
+        total = price+((in-1)*10);
         printf("Charge : %d",total);
 
     }
