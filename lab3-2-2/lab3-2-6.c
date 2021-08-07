@@ -15,7 +15,7 @@ int main(){
             printf("sum = %d",sum);
             break;
         }
-        if(sum == 5){
+        if(sum == 50){
             printf("FUUL");
             break;
         }
