@@ -9,7 +9,7 @@ int main(){
         	printf("Over\n");
         	break;
     	}
-    }printf("value over:%d",total);
+    }printf("value over: %d",total);
    
     return 0;
 }

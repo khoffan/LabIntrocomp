@@ -6,7 +6,7 @@ int main(){
         scanf("%d",&weights);
         total = total+weights;	 
 		if(total >= 400){
-        	printf("Over\n");
+        	printf("Overload!!\n");
         	break;
     	}
     }
